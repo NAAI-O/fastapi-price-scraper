@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fastapi-price-scraper"
+version = "0.1.0"
+description = ""
+authors = ["Ivan Yevpat <100120857+maracasabat@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "fastapi_price_scraper"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.95.1"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+scrapy = "^2.8.0"
+beautifulsoup4 = "^4.12.2"
+requests = "^2.30.0"
+pymongo = "^4.3.3"
+mongoengine = "^0.27.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
